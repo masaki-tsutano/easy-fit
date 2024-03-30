@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+
+  <!-- Google Fonts Link -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- Font Aewsome CDN Link -->
+  <script src="https://kit.fontawesome.com/a806ddd0ce.js" crossorigin="anonymous"></script>
+
+  <!-- Reset css CDN Link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@4.0.1/destyle.min.css">
+
+  <!-- Css Link -->
+  <link rel="stylesheet" href="./css/contact.css">
+
+  <title>お問い合わせ</title>
+</head>
+<body>
+  <!-- .header -->
+  <header class="header">
+    <div class="header_inner">
+      <div class="header_menu-wrapper">
+        <h1 class="header_title">
+          <a href="./index.html">
+            <img src="./img/home/logo.png" width="159" height="31" loading="lazy" decoding="async" alt="">
+          </a>
+        </h1>
+        <nav class="header_nav header_pc-nav">
+          <ul class="header_menu">
+            <li class="header_menu-list">
+              <a href="./index.html" class="header_menu-link">ホーム</a>
+            </li>
+            <li class="header_menu-list">
+              <a href="./news.html" class="header_menu-link">お知らせ</a>
+            </li>
+            <li class="header_menu-list">
+              <a href="./blog/blog01.html" class="header_menu-link">ブログ</a>
+            </li>
+            <li class="header_menu-list">
+              <a href="./price.html" class="header_menu-link">コース・料金</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header_info">
+        <div class="header_text-wrapper">
+          <p class="header_text">平日08:00~20:00</p>
+          <p class="header_call-text">
+            <a href="tel:012-3456-7890">012-3456-7890</a>
+          </p>
+        </div>
+        <div class="header_link-wrapper">
+          <a href="./contact.html" class="header_button">無料体験</a>
+          <a href="./contact.html" class="header_button header_contact-button">お問い合わせ</a>
+        </div>
+      </div>
+      <div class="hamburger">
+        <div class="menu">
+          <span class="line one"></span>
+          <span class="line two"></span>
+          <span class="line three"></span>
+        </div>
+      </div>
+    </div>
+    <nav class="header_nav header_hamburger-nav" id="js-nav">
+      <ul class="header_menu">
+        <li class="header_menu-list">
+          <a href="./index.html" class="header_menu-link">ホーム</a>
+        </li>
+        <li class="header_menu-list">
+          <a href="./news.html" class="header_menu-link">お知らせ</a>
+        </li>
+        <li class="header_menu-list">
+          <a href="./blog/blog01.html" class="header_menu-link">ブログ</a>
+        </li>
+        <li class="header_menu-list">
+          <a href="./price.html" class="header_menu-link">コース・料金</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- /.header -->
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="mv mv_space">
+      <div class="mv_img mv_page-contact-img">
+        <h2 class="mv_page-headline">お問い合わせ</h2>
+      </div>
+      <div class="breadcrumb_list">
+        <div class="breadcrumb_list_inner" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="./index.html" class="home">
+              <span itemprop="name">ホーム</span>
+            </a>
+            <meta itemprop="position" content="1">
+          </span>
+          <i class="fa-solid fa-chevron-right"></i>
+          <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span itemprop="name">お問い合わせ</span>
+            <meta itemprop="position" content="2">
+          </span>
+        </div>
+      </div>
+    </div>
+    <form method="post" action="./thanks.html" class="form" id="contactForm">
+      <table class="contact_form">
+        <tr>
+          <th class="required">お名前（漢字）</th>
+          <td>
+            <input type="text" name="name" size="58" value="" placeholder="例）山田　太郎" required>
+            <p class="error-text" role="alert" aria-live="polite" aria-hidden="true">お名前を入力してください。</p>
+          </td>
+        </tr>
+        <tr>
+          <th class="required">お名前（ふりがな）</th>
+          <td>
+            <input type="text" name="furigana" size="58" value="" placeholder="例）やまだ　たろう" required>
+            <p class="error-text" role="alert" aria-live="polite" aria-hidden="true">ふりがなを入力してください。</p>
+          </td>
+        </tr>
+        <tr>
+          <th class="required">電話番号</th>
+          <td>
+            <input type="text" name="tel" size="58" value="" placeholder="例）0312345678" required>
+            <p class="error-text" role="alert" aria-live="polite" aria-hidden="true">電話番号を入力してください。</p>
+          </td>
+        </tr>
+        <tr>
+          <th class="required">メールアドレス</th>
+          <td>
+            <input type="email" name="email" size="58" value="" placeholder="例）example@example.co.jp" id="email" required>
+            <p class="error-text" role="alert" aria-live="polite" aria-hidden="true">メールアドレスを入力してください。</p>
+          </td>
+        </tr>
+        <tr>
+          <th class="required email_conf">メールアドレス（確認）</th>
+          <td>
+            <input type="email" name="email_conf" size="58" value="" placeholder="例）example@example.co.jp" required>
+            <p class="error-text" role="alert" aria-live="polite" aria-hidden="true">メールアドレスを入力してください。</p>
+          </td>
+        </tr>
+        <tr>
+          <th class="required top-cell">お問合せ内容</th>
+          <td class="text-area">
+            <textarea name="content" cols="48" rows="5" placeholder="お問合せ内容を記入してください。" required></textarea>
+            <p class="error-text" role="alert" aria-live="polite" aria-hidden="true">お問い合わせ内容を入力してください。</p>
+          </td>
+        </tr>
+        <tr>
+          <th class="required privacy_policy">個人情報の取扱について</th>
+          <td class="privacy-policy">
+            <label class="checkbox_label"><input type="checkbox" id="privacyPolicy" name="privacy_policy[]" value="個人情報保護方針に同意する" required>
+            <span class="checkbox_txt">個人情報保護方針に同意する</span></label>
+            <p class="error-text" role="alert" aria-live="polite" aria-hidden="true">チェックをいれてください。</p>
+          </td>
+        </tr>
+      </table>
+      <button type="submit" name="submitConfirm" value="送信する" id="js-submit" class="confirm_btn" disabled>送信する</button>
+    </form>
+  </main>
+  <!-- /MAIN -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer_inner contactfooter_inner">
+      <div class="footer_menu-wrapper">
+        <div class="container">
+          <div class="footer_menu-inner">
+            <ul class="footer_list">
+              <li>
+                <a href="./index.html" class="footer_item footer_item01">ホーム</a>
+              </li>
+              <li>
+                <a href="./news.html" class="footer_item footer_item02">お知らせ</a>
+              </li>
+              <li>
+                <a href="./blog/blog01.html" class="footer_item footer_item03">ブログ</a>
+              </li>
+              <li>
+                <a href="./price.html" class="footer_item">コース・料金</a>
+              </li>
+            </ul>
+            <div class="footer_link-wrapper">
+              <a href="./index.html" class="footer_title">
+                <img src="./img/home/logo.png" width="159" height="31" loading="lazy" decoding="async" alt="">
+              </a>
+              <div class="footer_call-wrapper">
+                <p class="footer_call-text">
+                  <a href="tel:012-345-6789">012-345-6789</a>
+                </p>
+                <p class="footer_link-date">平日08:00~20:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright_wrap">
+        <small class="copyright">&copy;&nbsp;Easy Fit</small>
+      </div>
+    </div>
+  </footer>
+  <!-- /FOOTER -->
+
+  <!-- jquery CDN Link -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+  <!-- jquery validate CDN Link -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.20.0/dist/jquery.validate.min.js"></script>
+
+  <!-- JS Link -->
+  <script src="./js/script.js"></script>
+</body>
+</html>
